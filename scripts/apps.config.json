@@ -71,21 +71,22 @@
       "telegram": null
     },
     {
-      "id": "maxtube",
-      "name": "MaxTube",
-      "iconURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/assets/icons/maxtube.png",
+      "id": "youtube",
+      "name": "YouTubePlus",
+      "iconURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/assets/icons/youtube.png",
       "tintColor": "FF0000",
-      "developerName": "Mark02",
-      "localizedDescription": "",
+      "developerName": "mrdrvt99 (YTLite)",
+      "localizedDescription": "YouTube 增强版（YouPro/YTLite/YTKillerPlus 构建）：免订阅解锁 Premium、完整 4K HDR、新版下载管理器，基于官方客户端注入 YTLite",
       "versionDescription": "",
-      "bundleIdentifier": "",
-      "updateSource": null,
-      "telegram": {
-        "channel": "https://t.me/Mark02workshop_official",
-        "filenamePattern": "(?i)^maxtube.*\\.ipa$",
-        "versionPattern": "(\\d+(?:[._]\\d+)+(?:[a-z]\\d+)?)",
-        "limit": 300
+      "bundleIdentifier": "com.google.ios.youtube",
+      "updateSource": {
+        "type": "github-release",
+        "url": "https://github.com/mrdrvt99/YouProEXTRA/releases",
+        "assetPattern": "(?i)^YouTubePlus_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "rehost": false
       },
+      "telegram": null,
       "enabled": true
     },
     {

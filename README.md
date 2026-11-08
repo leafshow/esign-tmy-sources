@@ -12,38 +12,20 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 
 ## 收录应用
 
-| App | 简介 |
-| --- | --- |
-| DjuuMusic | DJ呦呦（m.djuu.com）第三方 iOS 原生客户端（自研，液态玻璃 UI） |
-| Spotify | 增强版（EeveeSpotifyReincarnated）：解锁 Premium |
-| MaxTube | YouTube 增强版（免广告、后台播放） |
-| RyukGram | Instagram 增强版 |
-| SoundCloud | 增强版（NexaSC）：解锁 SoundCloud Go+ |
-| PiliPlus | 第三方 Bilibili 客户端（Flutter），无广告、界面简洁 |
-| RedditDeluxe | 官方 Reddit 客户端注入增强 tweak（RedditFilter） |
-| AirCard | Apple Wallet 卡片皮肤与锁屏密码主题 |
-| PhotosBackup | 照片备份工具 |
+| App          | 简介                                                |
+| ------------ | --------------------------------------------------- |
+| Spotify      | 增强版（EeveeSpotifyReincarnated）：解锁 Premium    |
+| MaxTube      | YouTube 增强版（免广告、后台播放）                  |
+| RyukGram     | Instagram 增强版                                    |
+| SoundCloud   | 增强版（NexaSC）：解锁 SoundCloud Go+               |
+| PiliPlus     | 第三方 Bilibili 客户端（Flutter），无广告、界面简洁 |
+| RedditDeluxe | 官方 Reddit 客户端注入增强 tweak（RedditFilter）    |
+| AirCard      | Apple Wallet 卡片皮肤与锁屏密码主题                 |
+| PhotosBackup | 照片备份工具                                        |
 
 ## 最近更新
 
 <!-- changelog:start -->
-### 2026-11-08 14:58 · schedule
-
-| App | 结果 | 版本 |
-|---|---|---|
-| DjuuMusic | ✅ 无更新 | 1.0.6 |
-| PhotosBackup | ✅ 无更新 | 0.3.7 |
-| RedditDeluxe | ✅ 无更新 | 2026.40.0 |
-| MaxTube | ✅ 无更新 | 21.42.4_6.0b2 |
-| RyukGram | ✅ 无更新 | 1.5.1 |
-| SoundCloud | ✅ 无更新 | 8.85.0_NexaSCb5 |
-| AirCard | ✅ 无更新 | 1.3.2 |
-| PiliPlus | ✅ 无更新 | 2.2.0.2 |
-| Spotify | ✅ 无更新 | 9.1.88 |
-
-共 9 个 App：更新 0 · 无更新 9 · 失败 0 · 缺片段 0
-
-**[完整更新日志 →](CHANGELOG.md)**
 <!-- changelog:end -->
 
 ## 工作机制

@@ -137,6 +137,11 @@ def pick_github_release(src):
     asset = assets[0]
     tag = str(rel.get("tag_name") or "").strip()
     version = tag[1:] if tag[:1] in "vV" else tag
+    vp = src.get("versionPattern")  # tag 非版本号形式（如 ytl-ipa8）时从文件名提取真实版本
+    if vp:
+        m = re.search(vp, asset.get("name", ""))
+        if m:
+            version = m.group(1) if m.groups() else m.group(0)
     body = (rel.get("body") or "").strip()
     return {
         "version": version,
