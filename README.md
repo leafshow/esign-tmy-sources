@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 ## 最近更新
 
 <!-- changelog:start -->
-### 2026-11-10 04:28 · schedule
+### 2026-11-10 11:14 · workflow_dispatch
 
 | App | 结果 | 版本 |
 |---|---|---|
@@ -34,13 +34,13 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 | PhotosBackup | ✅ 无更新 | 0.3.7 |
 | RedditDeluxe | ✅ 无更新 | 2026.40.0 |
 | YouTubePlus | ✅ 无更新 | 21.45.4_6.0 |
-| RyukGram | ✅ 无更新 | 1.5.1 |
-| SoundCloud | ✅ 无更新 | 8.85.0_NexaSCb5 |
+| RyukGram | ⚠️ 同步失败（回落旧版本）（缺少 Telegram 环境变量: TG_API_ID, TG_API_HASH, TG_SESSION） | 1.5.1 |
+| SoundCloud | ⚠️ 同步失败（回落旧版本）（缺少 Telegram 环境变量: TG_API_ID, TG_API_HASH, TG_SESSION） | 8.85.0_NexaSCb5 |
 | AirCard | ✅ 无更新 | 1.3.2 |
 | PiliPlus | ✅ 无更新 | 2.2.0.2 |
 | Spotify | ✅ 无更新 | 9.1.88 |
 
-共 9 个 App：更新 0 · 无更新 9 · 失败 0 · 缺片段 0
+共 9 个 App：更新 0 · 无更新 7 · 失败 2 · 缺片段 0
 
 **[完整更新日志 →](CHANGELOG.md)**
 <!-- changelog:end -->

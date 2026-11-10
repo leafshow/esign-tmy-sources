@@ -1,7 +1,7 @@
 {
   "name": "tomoya06 创意软件工坊",
   "identifier": "com.qnz.selfhost.source",
-  "sourceURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json",
+  "sourceURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/app.json",
   "apps": [
     {
       "name": "DjuuMusic",
@@ -130,6 +130,6 @@
       "type": 1
     }
   ],
-  "iconURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/assets/icons/source.png",
+  "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
   "tintColor": "A855F7"
 }
