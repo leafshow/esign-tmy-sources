@@ -2,14 +2,14 @@
   "source": {
     "name": "tomoya06 创意软件工坊",
     "identifier": "com.qnz.selfhost.source",
-    "sourceURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json",
-    "iconURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/assets/icons/source.png",
+    "sourceURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/app.json",
+    "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
     "website": "",
     "tintColor": "A855F7"
   },
   "storage": {
     "type": "github-release",
-    "repo": "tomoya06/esign-tmy-sources",
+    "repo": "leafshow/esign-tmy-sources",
     "tag": "ipa-store"
   },
   "r2": {
