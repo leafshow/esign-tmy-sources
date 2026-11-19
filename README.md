@@ -26,7 +26,7 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 ## 最近更新
 
 <!-- changelog:start -->
-### 2026-11-19 15:41 · workflow_dispatch
+### 2026-11-19 15:46 · workflow_dispatch
 
 | App | 结果 | 版本 |
 |---|---|---|
@@ -51,17 +51,17 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 | YouTube_21.42.4_Plus@巨魔商店 | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | com.taobao.fleamarket | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | 摩行无忧_1.7.2_𝑌𝑄𝐶 | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
-| 番茄小说_7.4.1_净化@巨魔商店 | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
+| 番茄小说_7.4.1_净化@巨魔商店 | ❔ 无旧条目且未产出（A wait of 278 seconds is required (caused by CheckChatInviteRequest)） | — |
 | 鉴黄放映机_1.4.11_iOS宝藏 | ⚠️ 同步失败（回落旧版本）（频道中未找到匹配的 .ipa 文件） | 1.4.11 |
 | 🄷🅆 Citrus | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | 🄷🅆 Home workouts | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | 🄷🅆 LingUp | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | 🄷🅆 NeoServer | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
-| 🄷🅆 Teleprompter | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
-| 🄷🅆 Varlens | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
+| 🄷🅆 Teleprompter | ❔ 无旧条目且未产出（A wait of 276 seconds is required (caused by CheckChatInviteRequest)） | — |
+| 🄷🅆 Varlens | ❔ 无旧条目且未产出（A wait of 283 seconds is required (caused by CheckChatInviteRequest)） | — |
 | 🄷🅆 Zeta | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 | 🄷🅆 iCost | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
-| 🄷🅆 rPlayer | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
+| 🄷🅆 rPlayer | ❔ 无旧条目且未产出（A wait of 282 seconds is required (caused by CheckChatInviteRequest)） | — |
 | 🄷🅆 扫描全能王 | ❔ 无旧条目且未产出（频道中未找到匹配的 .ipa 文件） | — |
 
 共 33 个 App：更新 0 · 无更新 9 · 失败 2 · 缺片段 0
