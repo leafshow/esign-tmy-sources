@@ -180,19 +180,402 @@
       "enabled": true
     },
     {
-      "id": "box-apps",
-      "name": "Box 群组 IPA",
-      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "id": "8_ball_pool_crack",
+      "name": "8 Ball Pool Crack",
       "tintColor": "007AFF",
       "developerName": "Box 群组",
-      "localizedDescription": "从 Box TG 群组自动收录 IPA（🄷🅆 系列及其他分享应用）",
+      "localizedDescription": "",
       "bundleIdentifier": "",
       "updateSource": null,
       "telegram": {
         "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
-        "filenamePattern": "(?i)\\.ipa$",
+        "filenamePattern": "(?i)^8\\ Ball\\ Pool\\ Crack_56\\.31\\.1\\.ipa$",
+        "versionPattern": "(?i)56\\.31\\.1",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "app",
+      "name": "APP",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^APP_2\\.6\\.6\\.ipa$",
+        "versionPattern": "(?i)2\\.6\\.6",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "cs2手游_1_3_0_1_自瞄绘制皮肤解锁等",
+      "name": "CS2手游_1.3.0.1_自瞄绘制皮肤解锁等",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^CS2手游_1\\.3\\.0\\.1_自瞄绘制皮肤解锁等\\.ipa$",
         "versionPattern": null,
-        "limit": 50
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "gta_v_6_2_1_优化版本",
+      "name": "GTA V_6.2.1_优化版本",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^GTA\\ V_6\\.2\\.1_优化版本\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "gta_v_6_5_2_优化增强",
+      "name": "GTA V_6.5.2_优化增强",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^GTA\\ V_6\\.5\\.2_优化增强\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "insav瑟瑟",
+      "name": "INSAV瑟瑟",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^INSAV瑟瑟_1\\.0\\.0\\.ipa$",
+        "versionPattern": "(?i)1\\.0\\.0",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "launchx_3_1_4_𝑌𝑄𝐶",
+      "name": "LaunchX_3.1.4_𝑌𝑄𝐶",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^LaunchX_3\\.1\\.4_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "netflix_genius_ffipa",
+      "name": "Netflix ✨✨GeNiUs@FFipa",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^Netflix\\ ✨✨GeNiUs@FFipa_3\\.3\\.4\\.ipa$",
+        "versionPattern": "(?i)3\\.3\\.4",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "vidhub_3_0_8_𝑌𝑄𝐶",
+      "name": "VidHub_3.0.8_𝑌𝑄𝐶",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^VidHub_3\\.0\\.8_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "youtube_21_42_4_plus_巨魔商店",
+      "name": "YouTube_21.42.4_Plus@巨魔商店",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^YouTube_21\\.42\\.4_Plus@巨魔商店\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "com_taobao_fleamarket",
+      "name": "com.taobao.fleamarket",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^com\\.taobao\\.fleamarket\\-7\\.28\\.70\\-eeveedecrypter\\.ipa$",
+        "versionPattern": "(?i)7\\.28\\.70\\-eeveedecrypter",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "摩行无忧_1_7_2_𝑌𝑄𝐶",
+      "name": "摩行无忧_1.7.2_𝑌𝑄𝐶",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^摩行无忧_1\\.7\\.2_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "番茄小说_7_4_1_净化_巨魔商店",
+      "name": "番茄小说_7.4.1_净化@巨魔商店",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^番茄小说_7\\.4\\.1_净化@巨魔商店\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "鉴黄放映机_1_4_11_ios宝藏",
+      "name": "鉴黄放映机_1.4.11_iOS宝藏",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^鉴黄放映机_1\\.4\\.11_iOS宝藏\\.ipa$",
+        "versionPattern": null,
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "citrus",
+      "name": "Citrus",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Citrus_2\\.6\\.1\\.ipa$",
+        "versionPattern": "(?i)2\\.6\\.1",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "home_workouts",
+      "name": "Home workouts",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Home\\ workouts_1\\.55\\.0\\.ipa$",
+        "versionPattern": "(?i)1\\.55\\.0",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "lingup",
+      "name": "LingUp",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ LingUp_2\\.0\\.28\\.ipa$",
+        "versionPattern": "(?i)2\\.0\\.28",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "neoserver",
+      "name": "NeoServer",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ NeoServer_8\\.4\\.8\\.ipa$",
+        "versionPattern": "(?i)8\\.4\\.8",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "teleprompter",
+      "name": "Teleprompter",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Teleprompter_13\\.2\\.3\\.ipa$",
+        "versionPattern": "(?i)13\\.2\\.3",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "varlens",
+      "name": "Varlens",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Varlens_8\\.4\\.1\\.ipa$",
+        "versionPattern": "(?i)8\\.4\\.1",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "zeta",
+      "name": "Zeta",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Zeta_2\\.3\\.3\\.ipa$",
+        "versionPattern": "(?i)2\\.3\\.3",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "zeta_1",
+      "name": "Zeta",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ Zeta_2\\.3\\.4\\.ipa$",
+        "versionPattern": "(?i)2\\.3\\.4",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "icost",
+      "name": "iCost",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ iCost_4\\.7\\.1\\.ipa$",
+        "versionPattern": "(?i)4\\.7\\.1",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "rplayer",
+      "name": "rPlayer",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ rPlayer_8\\.1\\.2\\.ipa$",
+        "versionPattern": "(?i)8\\.1\\.2",
+        "limit": 20
+      },
+      "enabled": true
+    },
+    {
+      "id": "扫描全能王",
+      "name": "扫描全能王",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)^🄷🅆\\ 扫描全能王_7\\.29\\.5\\.ipa$",
+        "versionPattern": "(?i)7\\.29\\.5",
+        "limit": 20
       },
       "enabled": true
     }
