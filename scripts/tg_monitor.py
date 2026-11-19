@@ -43,7 +43,10 @@ def normalize_channel(channel):
     channel = str(channel).strip()
     if channel.startswith(("https://", "http://")):
         path = urlparse(channel).path.strip("/")
-        return f"@{path.split('/')[0]}"
+        name = path.split("/")[0]
+        if name.startswith("+"):
+            name = name[1:]
+        return f"@{name}"
     if channel.startswith(("@", "-")):
         return channel
     return f"@{channel}"
@@ -73,7 +76,12 @@ def find_latest_ipa(channel, filename_pattern=r"(?i)\.ipa$", version_pattern=Non
     async def _run():
         best, best_key = None, None
         async with _client() as client:
-            async for msg in client.iter_messages(normalize_channel(channel), limit=limit):
+            # 优先用原始链接（支持 t.me/+xxx 私有邀请），回退到 normalize_channel
+            try:
+                entity = await client.get_entity(channel)
+            except ValueError:
+                entity = await client.get_entity(normalize_channel(channel))
+            async for msg in client.iter_messages(entity, limit=limit):
                 doc = msg.document
                 if doc is None:
                     continue

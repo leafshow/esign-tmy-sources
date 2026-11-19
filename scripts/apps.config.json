@@ -178,6 +178,23 @@
       },
       "telegram": null,
       "enabled": true
+    },
+    {
+      "id": "box-apps",
+      "name": "Box 群组 IPA",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "Box 群组",
+      "localizedDescription": "从 Box TG 群组自动收录 IPA（🄷🅆 系列及其他分享应用）",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
+        "filenamePattern": "(?i)\\.ipa$",
+        "versionPattern": null,
+        "limit": 50
+      },
+      "enabled": true
     }
   ],
   "downloadMirror": "https://gh-proxy.com/"
