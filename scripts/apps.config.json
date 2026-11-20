@@ -180,19 +180,954 @@
       "enabled": true
     },
     {
-      "id": "box-apps",
-      "name": "Box 群组 IPA",
+      "id": "6分钟英语",
+      "name": "6分钟英语",
       "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
       "tintColor": "007AFF",
-      "developerName": "Box 群组",
-      "localizedDescription": "从 Box TG 群组自动收录 IPA（🄷🅆 系列及其他分享应用）",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
       "bundleIdentifier": "",
       "updateSource": null,
       "telegram": {
-        "channel": "https://t.me/+bgJ44vwvhQVhNjA1",
-        "filenamePattern": "(?i)\\.ipa$",
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^6分钟英语_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "8_ball_pool_crack",
+      "name": "8 Ball Pool Crack",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^8\\ Ball\\ Pool\\ Crack_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "aircard汉化",
+      "name": "AirCard汉化",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^AirCard汉化_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "app",
+      "name": "APP",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^APP_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "citrus",
+      "name": "🄷🅆 Citrus",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Citrus_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "com_taobao_fleamarket_eeveedecrypter",
+      "name": "com.taobao.fleamarket",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^com\\.taobao\\.fleamarket\\-.*\\-eeveedecrypter\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "cs2手游_自瞄绘制皮肤解锁等",
+      "name": "CS2手游",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^CS2手游_.*_自瞄绘制皮肤解锁等\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "fito",
+      "name": "Fito",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Fito_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "gta_v_优化增强",
+      "name": "GTA V",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^GTA\\ V_.*_优化增强\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "gta_v_优化版本",
+      "name": "GTA V",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^GTA\\ V_.*_优化版本\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "home_workouts",
+      "name": "🄷🅆 Home workouts",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Home\\ workouts_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "husk_秋名山",
+      "name": "Husk",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Husk\\-.*_秋名山\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "iconlib_图标下载",
+      "name": "IconLib_图标下载",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^IconLib_图标下载_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "icost",
+      "name": "🄷🅆 iCost",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ iCost_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "insav瑟瑟",
+      "name": "INSAV瑟瑟",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^INSAV瑟瑟_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "launchx",
+      "name": "LaunchX",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^LaunchX_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "lingup",
+      "name": "🄷🅆 LingUp",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ LingUp_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "lingvist",
+      "name": "Lingvist",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Lingvist_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "miplayer",
+      "name": "🄷🅆 MiPlayer",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ MiPlayer_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "miplayer_pro",
+      "name": "miplayer",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^miplayer\\..*\\.PRO\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "miraplay",
+      "name": "🄷🅆 MiraPlay",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ MiraPlay_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "neoserver",
+      "name": "🄷🅆 NeoServer",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ NeoServer_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "netflix_genius_ffipa",
+      "name": "Netflix ✨✨GeNiUs@FFipa",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Netflix\\ ✨✨GeNiUs@FFipa_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "nfctools",
+      "name": "NFCTools",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^NFCTools_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "one_1021",
+      "name": "One-1021",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^One\\-1021.*\\.ipa$",
         "versionPattern": null,
-        "limit": 50
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "photolab",
+      "name": "PhotoLab",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^PhotoLab_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "picsew",
+      "name": "Picsew",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Picsew_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "proxyman",
+      "name": "Proxyman",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Proxyman_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "rex_pro",
+      "name": "Rex",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Rex\\..*\\.PRO\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "rplayer",
+      "name": "🄷🅆 rPlayer",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ rPlayer_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "scrolla",
+      "name": "Scrolla",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Scrolla_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "simplypiano",
+      "name": "SimplyPiano",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^SimplyPiano_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "teleprompter",
+      "name": "🄷🅆 Teleprompter",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Teleprompter_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "textastic",
+      "name": "🄷🅆 Textastic",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Textastic_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "uplens",
+      "name": "🄷🅆 Uplens",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Uplens_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "varlens",
+      "name": "🄷🅆 Varlens",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Varlens_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "vdit",
+      "name": "VDIT",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^VDIT_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "vidhub",
+      "name": "VidHub",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^VidHub_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "vlognow",
+      "name": "VlogNow",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^VlogNow_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "wloc虚拟定位_代理工具版",
+      "name": "Wloc虚拟定位",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Wloc虚拟定位_.*_代理工具版\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "wloc虚拟定位_自带隧道版",
+      "name": "Wloc虚拟定位",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^Wloc虚拟定位_.*_自带隧道版\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "youtube_plus_巨魔商店",
+      "name": "YouTube",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^YouTube_.*_Plus@巨魔商店\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "zeta",
+      "name": "🄷🅆 Zeta",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ Zeta_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "塔台_61_巨魔商店",
+      "name": "塔台",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^塔台_.*\\(61\\)@巨魔商店\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "小决定",
+      "name": "小决定",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^小决定_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "志定义水印",
+      "name": "志定义水印",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^志定义水印_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "扫描全能王",
+      "name": "🄷🅆 扫描全能王",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^🄷🅆\\ 扫描全能王_.*\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "摩行无忧",
+      "name": "摩行无忧",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^摩行无忧_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "摩途",
+      "name": "摩途",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^摩途_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "每日英语听力",
+      "name": "每日英语听力",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^每日英语听力_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "番茄小说_净化_巨魔商店",
+      "name": "番茄小说",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^番茄小说_.*_净化@巨魔商店\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "素材神器pro",
+      "name": "素材神器Pro",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^素材神器Pro_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "练写字",
+      "name": "练写字",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^练写字_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "鉴黄放映机_ios宝藏",
+      "name": "鉴黄放映机",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^鉴黄放映机_.*_iOS宝藏\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "锁屏启动",
+      "name": "锁屏启动",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^锁屏启动_.*_𝑌𝑄𝐶\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
+      },
+      "enabled": true
+    },
+    {
+      "id": "闲鱼_助手_巨魔商店",
+      "name": "闲鱼",
+      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "tintColor": "007AFF",
+      "developerName": "ResourcePlanet",
+      "localizedDescription": "",
+      "bundleIdentifier": "",
+      "updateSource": null,
+      "telegram": {
+        "channel": "https://t.me/ResourcePlanet",
+        "filenamePattern": "(?i)^闲鱼_.*_助手@巨魔商店\\.ipa$",
+        "versionPattern": "(\\d+(?:[._]\\d+)+)",
+        "limit": 150
       },
       "enabled": true
     }
