@@ -107,6 +107,7 @@ https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/app.json
 - 来源类型：未加密 JSON 源（ESign/AltStore）、GitHub Release、Telegram 公开频道
 - IPA 转存到本仓库 `ipa-store` Release 资产（TG 文件链接会过期必须转存；GitHub Release 直链永久有效则直接引用）
 - 所有 `github.com` 下载链接在输出层自动加 gh-proxy 镜像前缀，提升国内可达性
+- 生成 `app.json` 时按 `bundleIdentifier` 去重，同一应用只保留最新版本
 - 每轮检查结果写入 [CHANGELOG.md](CHANGELOG.md)（保留最近 60 轮）并刷新上方"最近更新"区块
 
 ## 维护

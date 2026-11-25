@@ -708,7 +708,7 @@ def load_existing_maps():
             apps = load_json(APP_JSON_PATH).get("apps") or []
         except (ValueError, OSError):
             log("app.json", "现有 app.json 解析失败，忽略")
-    valid = [a for a in apps if isinstance(a, dict)]
+    valid = dedupe_apps([a for a in apps if isinstance(a, dict)])
     return (
         {a.get("bundleIdentifier"): a for a in valid},
         {a.get("name"): a for a in valid},
@@ -797,7 +797,7 @@ def apply_download_mirror(url):
 def render_source(entries):
     src = CFG.get("source", {})
     out = {k: src.get(k, "") for k in ("name", "identifier", "sourceURL")}
-    out["apps"] = entries
+    out["apps"] = dedupe_apps(entries)
     for opt in ("iconURL", "website", "tintColor"):
         if src.get(opt):
             out[opt] = src[opt]
@@ -805,6 +805,35 @@ def render_source(entries):
         if isinstance(e, dict) and e.get("downloadURL"):
             e["downloadURL"] = apply_download_mirror(e["downloadURL"])
     return out
+
+
+def _version_key(version):
+    """把版本号拆成整数段比较，避免 6.10 被字符串比较误判小于 6.2。"""
+    values = []
+    for part in re.split(r"[^0-9]+", str(version or "")):
+        if part:
+            values.append(int(part))
+    return tuple(values)
+
+
+def dedupe_apps(entries):
+    """同应用只保留最新版本：bundleIdentifier 相同视为同应用；无 bid 时按名称兜底。"""
+    selected = {}
+    for index, entry in enumerate(entries):
+        if not isinstance(entry, dict):
+            continue
+        bid = str(entry.get("bundleIdentifier") or "").strip()
+        key = ("bid", bid) if bid else ("name", str(entry.get("name") or "").strip())
+        rank = (
+            _version_key(entry.get("version")),
+            str(entry.get("versionDate") or ""),
+            float(entry.get("size") or 0),
+            -index,
+        )
+        old = selected.get(key)
+        if old is None or rank > old[0]:
+            selected[key] = (rank, index, entry)
+    return [item[2] for item in sorted(selected.values(), key=lambda item: item[1])]
 
 
 def enabled_apps():
