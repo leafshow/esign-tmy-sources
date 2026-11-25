@@ -9,6 +9,7 @@
 """
 
 import argparse
+import hashlib
 import json
 import os
 import plistlib
@@ -18,6 +19,7 @@ import subprocess
 import sys
 import tempfile
 import zipfile
+import zlib
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -60,6 +62,15 @@ def sanitize_version(version):
     """版本号只保留安全字符，保证 R2 key 与 downloadURL 占位符替换后一致。"""
     version = str(version).strip()
     return re.sub(r"[^A-Za-z0-9._-]", "-", version) or "0"
+
+
+def ascii_slug(text, max_len=32):
+    """把含中文/emoji 的 id 转成稳定 ASCII 资产名片段；有损时加短哈希防撞。"""
+    s = re.sub(r"[^A-Za-z0-9._-]", "", str(text))
+    if s and s == str(text):
+        return s[:max_len]
+    h = hashlib.md5(str(text).encode("utf-8")).hexdigest()[:8]
+    return f"{s[:max_len]}-{h}" if s else h
 
 
 def fetch_json(url):
@@ -172,6 +183,126 @@ def itunes_release_notes(bid):
         return (res[0].get("releaseNotes") or "").strip() if res else ""
     except Exception:
         return ""
+
+
+def itunes_artwork(bid):
+    """App Store 官方图标（512/100px），非商店应用返回空。"""
+    if not bid:
+        return ""
+    try:
+        resp = requests.get(
+            f"https://itunes.apple.com/lookup?bundleId={bid}&country=us",
+            headers={"User-Agent": UA}, timeout=TIMEOUT,
+        )
+        resp.raise_for_status()
+        res = resp.json().get("results") or []
+        if not res:
+            return ""
+        return res[0].get("artworkUrl512") or res[0].get("artworkUrl100") or ""
+    except Exception:
+        return ""
+
+
+def uncrush_png(data):
+    """把 iOS 私有 CgBI 压缩 PNG 还原为标准 PNG（非 CgBI 原样返回）。"""
+    if len(data) < 57 or data[:8] != b"\x89PNG\r\n\x1a\n" or data[12:16] != b"CgBI":
+        return data
+    chunks = []
+    pos = 8
+    while pos + 8 <= len(data):
+        length = int.from_bytes(data[pos:pos + 4], "big")
+        ctype = data[pos + 4:pos + 8]
+        chunks.append((ctype, data[pos + 8:pos + 8 + length]))
+        pos += 12 + length
+        if ctype == b"IEND":
+            break
+    ihdr = next((d for t, d in chunks if t == b"IHDR"), None)
+    if ihdr is None:
+        return data
+    width = int.from_bytes(ihdr[0:4], "big")
+    height = int.from_bytes(ihdr[4:8], "big")
+    stride = width * 4
+    idat = b"".join(d for t, d in chunks if t == b"IDAT")
+    raw = zlib.decompressobj(-15).decompress(idat)
+    out = bytearray()
+    prev = bytearray(stride)
+    off = 0
+    for _ in range(height):
+        ftype = raw[off]
+        off += 1
+        line = bytearray(raw[off:off + stride])
+        off += stride
+        if ftype == 1:
+            for i in range(4, stride):
+                line[i] = (line[i] + line[i - 4]) & 0xFF
+        elif ftype == 2:
+            for i in range(stride):
+                line[i] = (line[i] + prev[i]) & 0xFF
+        elif ftype == 3:
+            for i in range(stride):
+                a = line[i - 4] if i >= 4 else 0
+                line[i] = (line[i] + ((a + prev[i]) >> 1)) & 0xFF
+        elif ftype == 4:
+            for i in range(stride):
+                a = line[i - 4] if i >= 4 else 0
+                b = prev[i]
+                c = prev[i - 4] if i >= 4 else 0
+                p = a + b - c
+                pa, pb, pc = abs(p - a), abs(p - b), abs(p - c)
+                pr = a if (pa <= pb and pa <= pc) else (b if pb <= pc else c)
+                line[i] = (line[i] + pr) & 0xFF
+        for i in range(0, stride, 4):
+            line[i], line[i + 2] = line[i + 2], line[i]
+        out += bytes([0]) + line
+        prev = line
+
+    def _chunk(ctype, cdata):
+        body = ctype + cdata
+        return len(cdata).to_bytes(4, "big") + body + zlib.crc32(body).to_bytes(4, "big")
+
+    return (b"\x89PNG\r\n\x1a\n" + _chunk(b"IHDR", ihdr)
+            + _chunk(b"IDAT", zlib.compress(bytes(out), 9)) + _chunk(b"IEND", b""))
+
+
+def extract_icon_from_ipa(ipa_path):
+    """从 IPA 包根目录提取最大 App 图标 PNG，失败返回 None。"""
+    try:
+        with zipfile.ZipFile(ipa_path) as z:
+            infos = z.infolist()
+            prefix = None
+            for i in infos:
+                if i.filename.startswith("Payload/") and ".app/" in i.filename:
+                    prefix = i.filename.split(".app/", 1)[0] + ".app/"
+                    break
+            if not prefix:
+                return None
+            icon_names = []
+            try:
+                with z.open(prefix + "Info.plist") as f:
+                    pl = plistlib.load(f)
+                primary = ((pl.get("CFBundleIcons") or {}).get("CFBundlePrimaryIcon") or {})
+                icon_names = [str(x) for x in (primary.get("CFBundleIconFiles") or pl.get("CFBundleIconFiles") or [])]
+            except Exception:
+                pass
+            best = None  # (size, name)
+            for i in infos:
+                n = i.filename
+                if not n.startswith(prefix) or n == prefix:
+                    continue
+                rel = n[len(prefix):]
+                if "/" in rel or not rel.lower().endswith(".png"):
+                    continue
+                base = rel[:-4]
+                if not (base.startswith("AppIcon") or any(base.startswith(ic) or base == ic for ic in icon_names)):
+                    continue
+                if best is None or i.file_size > best[0]:
+                    best = (i.file_size, n)
+            if not best:
+                return None
+            with z.open(best[1]) as f:
+                return uncrush_png(f.read())
+    except Exception:
+        return None
 
 
 def resolve_bundle_id_from_ipa_file(ipa_path):
@@ -348,7 +479,7 @@ def storage_upload_file(app_id, bid, version, ipa_path):
         token = gh_token()
         tag = st.get("tag") or "ipa-store"
         release_id = ensure_gh_release(repo, token, tag)
-        name = f"{app_id}_{bid}_{version}.ipa"
+        name = f"{ascii_slug(app_id)}_{ascii_slug(bid)}_{sanitize_version(version)}.ipa"
         size = gh_upload_asset(repo, token, release_id, name, ipa_path)
         log(app_id, f"已上传 GitHub Release:{tag}/{name} ({size} bytes)")
         return f"https://github.com/{repo}/releases/download/{tag}/{name}"
@@ -360,6 +491,59 @@ def storage_upload_file(app_id, bid, version, ipa_path):
     log(app_id, f"上传 -> R2:{key}")
     client.upload_file(str(ipa_path), bucket, key)
     return r2_download_url(CFG, bucket, bid, version)
+
+
+def storage_upload_icon(app_id, bid, png_bytes):
+    """上传应用图标到 ipa-store Release，返回 downloadURL（失败返回空）。"""
+    if not png_bytes:
+        return ""
+    st = CFG.get("storage", {}) or {}
+    if st.get("type") != "github-release":
+        return ""
+    try:
+        repo = gh_storage_repo(st)
+        token = gh_token()
+        tag = st.get("tag") or "ipa-store"
+        release_id = ensure_gh_release(repo, token, tag)
+        name = f"icon_{ascii_slug(bid)}.png"
+        import tempfile as _tf
+        from pathlib import Path as _P
+        with _tf.TemporaryDirectory() as tmp:
+            p = _P(tmp) / name
+            p.write_bytes(png_bytes)
+            gh_upload_asset(repo, token, release_id, name, p)
+        log(app_id, f"已上传图标 {name}")
+        return f"https://github.com/{repo}/releases/download/{tag}/{name}"
+    except Exception as exc:
+        log(app_id, f"图标上传失败: {exc}")
+        return ""
+
+
+def cleanup_legacy_assets():
+    """merge 阶段清理旧命名的 IPA 资产（非 ASCII / 旧前缀格式），图标资产保留。"""
+    st = CFG.get("storage", {}) or {}
+    if st.get("type") != "github-release":
+        return
+    try:
+        repo = gh_storage_repo(st)
+        token = gh_token()
+        tag = st.get("tag") or "ipa-store"
+        headers = gh_headers(token)
+        resp = requests.get(f"https://api.github.com/repos/{repo}/releases/tags/{tag}", headers=headers, timeout=TIMEOUT)
+        if resp.status_code != 200:
+            return
+        assets = resp.json().get("assets") or []
+        removed = 0
+        for a in assets:
+            name = a.get("name") or ""
+            if name.lower().endswith(".ipa") and (not name.isascii() or not re.fullmatch(r"[A-Za-z0-9._-]+_[A-Za-z0-9._-]+_[A-Za-z0-9._-]+\.ipa", name)):
+                dl = requests.delete(a["url"], headers=headers, timeout=TIMEOUT)
+                if dl.status_code < 300:
+                    removed += 1
+        if removed:
+            log("cleanup", f"已清理 {removed} 个旧命名 IPA 资产")
+    except Exception as exc:
+        log("cleanup", f"清理旧资产失败（忽略）: {exc}")
 
 
 def rehost_to_storage(app_id, bid, version, source_url):
@@ -479,8 +663,14 @@ def process_tg_app(app_cfg, existing):
     version = m.group(1) if m else info["date"].strftime("%Y%m%d")
     version = sanitize_version(version)
     if existing and existing.get("version") == version:
-        log(app_cfg["id"], f"无更新 (v{version})")
-        return None
+        old_url = str(existing.get("downloadURL") or "")
+        old_icon = str(existing.get("iconURL") or "")
+        needs_fix = (ascii_slug(app_cfg["id"]) not in old_url.rsplit("/", 1)[-1]
+                     or not old_icon or "icons/source.png" in old_icon)
+        if not needs_fix:
+            log(app_cfg["id"], f"无更新 (v{version})")
+            return None
+        log(app_cfg["id"], "版本未变，但链接或图标需修复，重新转存")
 
     tmpdir = tempfile.mkdtemp()
     try:
@@ -493,6 +683,9 @@ def process_tg_app(app_cfg, existing):
             bid = resolve_bundle_id_from_ipa_file(ipa_path)
             log(app_cfg["id"], f"解析到 bundleIdentifier: {bid}")
         url = storage_upload_file(app_cfg["id"], bid, version, ipa_path)
+        icon_url = app_cfg.get("iconURL") or itunes_artwork(bid) or storage_upload_icon(app_cfg["id"], bid, extract_icon_from_ipa(ipa_path))
+        if icon_url:
+            log(app_cfg["id"], f"图标: {icon_url}")
     finally:
         shutil.rmtree(tmpdir, ignore_errors=True)
 
@@ -501,7 +694,7 @@ def process_tg_app(app_cfg, existing):
         "versionDate": info["date"].astimezone(timezone.utc).isoformat(),
         "versionDescription": (info.get("caption") or "")[:500],
         "size": size,
-        "iconURL": "", "tintColor": "", "developerName": "", "localizedDescription": "",
+        "iconURL": icon_url, "tintColor": "", "developerName": "", "localizedDescription": "",
     }
     log(app_cfg["id"], f"已转存 (v{version}, {size} bytes)")
     return build_entry(app_cfg, bid, meta, url, size)
@@ -523,8 +716,15 @@ def load_existing_maps():
 
 
 def find_existing(app_cfg, existing_by_bid, existing_by_name):
-    """预查旧条目：TG 模式用配置的 bid 精确匹配；JSON 模式 bid 在源里，用 name 兜底。"""
+    """预查旧条目：bid 精确匹配；TG 变体按资产名前缀匹配；JSON 模式用 name 兜底。"""
     existing = existing_by_bid.get(app_cfg.get("bundleIdentifier") or "")
+    aid = ascii_slug(app_cfg.get("id") or "")
+    if existing is None and aid:
+        prefix_matches = [e for e in existing_by_bid.values()
+                          if isinstance(e, dict)
+                          and str(e.get("downloadURL") or "").rsplit("/", 1)[-1].rsplit("_", 2)[0] == aid]
+        if prefix_matches:
+            existing = prefix_matches[0]
     if existing is None:
         existing = existing_by_name.get(app_cfg.get("name") or "")
     return existing
@@ -827,6 +1027,7 @@ def cmd_merge(frag_dir):
             rows.append({"id": app_id, "name": app_cfg.get("name") or app_id, "status": "absent", "old_v": "", "new_v": "", "error": error})
 
     save_json(APP_JSON_PATH, render_source(entries))
+    cleanup_legacy_assets()
     log("summary", f"共 {len(entries)} 个 App；同步失败 {len(failed)}{': ' + ','.join(failed) if failed else ''}"
                    f"；缺片段 {len(missing)}{': ' + ','.join(missing) if missing else ''}（均已回落旧条目）")
     write_summary(render_summary(rows))
