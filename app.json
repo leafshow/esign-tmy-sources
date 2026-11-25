@@ -88,20 +88,6 @@
       "type": 1
     },
     {
-      "name": "AirCard",
-      "bundleIdentifier": "com.mak5er.aircard",
-      "developerName": "Mak5er",
-      "version": "1.3.2",
-      "versionDate": "2026-10-04T12:22:53Z",
-      "versionDescription": "## What's Changed in v1.3.2 🚀\n\nThis update brings full feature parity with AirCard macOS v1.2.6, restores robust card discovery across all iOS versions, introduces automatic bank/network recognition with custom card nicknames, delivers an ultra-fast tunnel cache (0.02s connections), and completely resolves wallpaper flashing for Collections and Mercury wallpapers.\n\n### 💳 Wallet Card Discovery & Bank Identification\n• **Universal Wallet Log Parser**: Ported the proven `WalletScanParser` from AirCard macOS. Captures cards from `Dashboard loading (...): for SOO+`, `passIDs[InSession]`, `passIDs[global]`, and modern JSON NFC activations (`\"identifier\": \"HEX\"`).\n• **Automatic Bank & Network Detection**: Recognizes Visa, Mastercard, American Express, UnionPay, Discover, and JCB via applet AIDs during selection.\n• **Card Nicknames (Rename)**: Added a direct **Rename** button (✏️) so you can give your cards friendly names like *\"Monobank\"*, *\"Salary Card\"*, or *\"Revolut\"*, safely persisted in app settings.\n• **28-Character Fallback Token Matcher**: Restores dependable card discovery on devices where standard log patterns are redacted.\n\n### ⚡ Ultra-Fast Tunnel Routing (from 10s to 0.02s!)\n• **Working Route Caching**: `rust-core` now caches the active RSD connection route (`LAST_WORKING_ROUTE`), eliminating repeated port and interface scanning.\n• **RSD-First Priority**: Connects directly via RemoteXPC on port 49152, bypassing slow Lockdown retries and broken pipes on iOS 18+.\n• **Eliminated Loopback Policy Drops**: Removed local loopback attempts that caused `policy drop` control channel errors.\n\n### 🖼 Wallpapers (.tendies) — Collections & Mercury Fixes\n• **Dual Injection on iOS 18+**: Wallpapers are now injected into both their primary bundle (`com.apple.WallpaperKit.CollectionsPoster` or `com.apple.MercuryPoster`) and the modern iOS 18+ application container (`com.apple.Posters.CollectionsPosterApp` / `com.apple.Posters.MercuryPosterApp`).\n• **Metadata Synchronization**: Fixed a critical issue where `Wallpaper.plist`'s numeric identifier was randomized out-of-sync with `suggestionMetadata.plist` (`7400.DYNAMIC`), causing wallpapers like Windows 11 to vanish from the Lock Screen gallery.\n• **Mercury Wallpaper Support**: Added recognition for `mercury-descriptors` container folders and registered `com.apple.Posters.MercuryPosterApp` in `PersistedPosterContainerBundleIdentifiers`.\n• **NeoSpring Respring**: Instant springboard reload to apply wallpaper preferences immediately.\n\n### 🧪 Quality & Testing\n• All 24 unit tests passing (`TendiesEngineTests`, `WalletScanParserTests`, `CardPhotoCropTests`, `CardPhotoPickerTests`).\n\n**Full Changelog**: https://github.com/Mak5er/AirCard-iOS/compare/v1.3.1...v1.3.2",
-      "downloadURL": "https://gh-proxy.com/https://github.com/Mak5er/AirCard-iOS/releases/download/v1.3.2/AirCard-iOS.ipa",
-      "localizedDescription": "Apple Wallet 卡片皮肤与锁屏密码主题（iOS 27+）",
-      "iconURL": "https://raw.githubusercontent.com/tomoya06/esign-tmy-sources/main/assets/icons/aircard.png",
-      "tintColor": "",
-      "size": 4638147,
-      "type": 1
-    },
-    {
       "name": "PiliPlus",
       "bundleIdentifier": "com.example.piliplus",
       "developerName": "bggRGjQaUbCoE",
@@ -242,20 +228,6 @@
       "type": 1
     },
     {
-      "name": "GTA V",
-      "bundleIdentifier": "kuka.ioskuka.gtavios",
-      "developerName": "ResourcePlanet",
-      "version": "6.2.1",
-      "versionDate": "2026-11-20T08:55:27+00:00",
-      "versionDescription": "☺️GTA V  6.2.1\n\n✅支持中文剧情模式等\n✅优化增加在线下载等，资源包下载 资源包下载2\n✅在线Mod下载加载\n✅根据kevinerikjs开源制作优化\n✅内置所有作弊功能，无敌秒杀刷车武器都有\n✅模组使用教程，里面包含所有GTA所有模组文件，有部分模组不支持iOS，后续会优化筛选掉不支持的\n✅巨魔或者 证书签名安装软件\n\n🏷️#GTAV #游戏\n\n❇️ 资源频道               💬交流群组",
-      "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/gta_v_-a0d3a965_kuka.ioskuka.gtavios_6.2.1.ipa",
-      "localizedDescription": "",
-      "iconURL": "https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/icon_kuka.ioskuka.gtavios.png",
-      "tintColor": "007AFF",
-      "size": 85215950,
-      "type": 1
-    },
-    {
       "name": "🄷🅆 Home workouts",
       "bundleIdentifier": "com.abishkking.maleworkout",
       "developerName": "ResourcePlanet",
@@ -264,7 +236,7 @@
       "versionDescription": "",
       "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/home_workouts_com.abishkking.maleworkout_1.55.0.ipa",
       "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/11/c5/5b11c5e2-0081-9ed4-f9b8-48f8e38cbeb1/AppIcon-0-0-1x_U007epad-0-6-0-sRGB-85-220.png/512x512bb.jpg",
       "tintColor": "007AFF",
       "size": 200289648,
       "type": 1
@@ -382,20 +354,6 @@
       "type": 1
     },
     {
-      "name": "miplayer",
-      "bundleIdentifier": "com.miplayerapp.www",
-      "developerName": "ResourcePlanet",
-      "version": "2.1.0",
-      "versionDate": "2026-11-20T08:55:27+00:00",
-      "versionDescription": "#MiPlayer #视频解析 #嗅探下载\n商店地址：appstore",
-      "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/miplayer_pro_com.miplayerapp.www_2.1.0.ipa",
-      "localizedDescription": "",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e4/a0/8a/e4a08aa4-82ba-769a-ce44-a393531831ae/AppIcon-1x_U007epad-0-1-85-220-0.png/512x512bb.jpg",
-      "tintColor": "007AFF",
-      "size": 38222530,
-      "type": 1
-    },
-    {
       "name": "🄷🅆 MiraPlay",
       "bundleIdentifier": "com.gendago.catpaw",
       "developerName": "ResourcePlanet",
@@ -404,7 +362,7 @@
       "versionDescription": "",
       "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/miraplay_com.gendago.catpaw_1.13.ipa",
       "localizedDescription": "",
-      "iconURL": "https://raw.githubusercontent.com/leafshow/esign-tmy-sources/main/assets/icons/source.png",
+      "iconURL": "https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/icon_com.gendago.catpaw.png",
       "tintColor": "007AFF",
       "size": 72404515,
       "type": 1
@@ -667,40 +625,12 @@
       "developerName": "ResourcePlanet",
       "version": "1.0.8",
       "versionDate": "2026-11-20T08:55:27+00:00",
-      "versionDescription": "支持 Surge Egern Shadowrocket \n不支持 Loon",
-      "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/wloc_-772f2b44_com.yu9191.wloc_1.0.8.ipa",
-      "localizedDescription": "",
-      "iconURL": "https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/icon_com.yu9191.wloc.png",
-      "tintColor": "007AFF",
-      "size": 1685406,
-      "type": 1
-    },
-    {
-      "name": "Wloc虚拟定位",
-      "bundleIdentifier": "com.yu9191.wloc",
-      "developerName": "ResourcePlanet",
-      "version": "1.0.8",
-      "versionDate": "2026-11-20T08:55:27+00:00",
       "versionDescription": "需要 🍎 iOS 27 系统\n\n🗺️ Wloc 隧道版\n以 Wloc 自身为 VPN 隧道，无需跳转 localdevvpn\n🔌 无需 Wi-Fi，数据也可虚拟定位\n🆕 1.0.8\n • 可搜索境外地点\n搜索框右边新增地球按钮，点亮后即可搜索国外地点——国内地图数据搜不到国外，这个走的是另一套全球地图。关掉地球仍是原来的国内搜索。\n • 中文也能搜\n输入中文会自动翻译成英文再搜（国外地图大多没收录中文名，直接搜常搜不到）。常见地标中英文都能搜到。\n • 首次中文搜索需下载语言包\n第一次用中文搜境外时，系统会弹窗让你下载「简体中文→英文」翻译包（用的是苹果系统自带的设备端翻译）。点同意下载一次即可，之后完全离线、很快，不再弹（以前下载过不会显示）\n\n更多说明请查看 🗺️ Wloc 频道",
       "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/wloc_-b15914ae_com.yu9191.wloc_1.0.8.ipa",
       "localizedDescription": "",
       "iconURL": "https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/icon_com.yu9191.wloc.png",
       "tintColor": "007AFF",
       "size": 1704075,
-      "type": 1
-    },
-    {
-      "name": "YouTube",
-      "bundleIdentifier": "com.google.ios.youtube",
-      "developerName": "ResourcePlanet",
-      "version": "21.42.4",
-      "versionDate": "2026-11-20T08:55:27+00:00",
-      "versionDescription": "📺 YouTube 21.42.4\n最低系统要求 iOS 17.0\n❗️❗️注入\n • 120hz 录屏轨迹\n • YTPiP 1.12.15 画中画\n • YTHUD 2.7.0 解锁高画质，设置-视频偏好画质\n • YTLite 6.0 Cracked by Zarzel\n • Mute 1.4.1｜Quality 1.3.6｜Speed 1.7.3\n播放器界面显示画质/静音按钮，设置-视频覆盖-自行开启\n🟢支持 iOS 26/27 液态玻璃\n🟢支持三指长按禁用插件\n\n🐦 PoomSmart ✈️ Dan",
-      "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/youtube_plus_-04635fc7_com.google.ios.youtube_21.42.4.ipa",
-      "localizedDescription": "",
-      "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3c/40/e9/3c40e960-3fc8-beba-ad9a-b71ac5c9e59d/logo_youtube_2024_q4_color-0-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220.png/512x512bb.jpg",
-      "tintColor": "007AFF",
-      "size": 159070024,
       "type": 1
     },
     {
@@ -883,20 +813,6 @@
       "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bd/c5/ee/bdc5ee67-455f-3b4f-2402-38138d478ab5/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.jpg",
       "tintColor": "007AFF",
       "size": 59665366,
-      "type": 1
-    },
-    {
-      "name": "闲鱼",
-      "bundleIdentifier": "com.taobao.fleamarket",
-      "developerName": "ResourcePlanet",
-      "version": "7.28.50",
-      "versionDate": "2026-11-20T08:55:27+00:00",
-      "versionDescription": "🐟 闲鱼 7.28.50\n\n❗️❗️ 闲鱼助手 3.0.0\n • 去广告、自动擦亮商品\n • 开关位于“我的”界面右上角\n\n⛓️ 作者网站  🍀 作者源",
-      "downloadURL": "https://gh-proxy.com/https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/__-089b1d95_com.taobao.fleamarket_7.28.50.ipa",
-      "localizedDescription": "",
-      "iconURL": "https://github.com/leafshow/esign-tmy-sources/releases/download/ipa-store/icon_com.taobao.fleamarket.png",
-      "tintColor": "007AFF",
-      "size": 166388724,
       "type": 1
     }
   ],
