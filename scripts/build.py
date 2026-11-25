@@ -1019,6 +1019,7 @@ def cmd_merge(frag_dir):
     CFG = load_json(CONFIG_PATH)
     existing_by_bid, existing_by_name = load_existing_maps()
     frag_dir = Path(frag_dir)
+    covered_existing = set()
 
     entries, failed, missing = [], [], []
     rows = []
@@ -1043,15 +1044,24 @@ def cmd_merge(frag_dir):
             failed.append(app_id)
             error = frag.get("error")
             log("merge", f"[{app_id}] 片段无可用条目 (error: {error})，回落旧条目")
-        else:
-            missing.append(app_id)
-            log("merge", f"[{app_id}] 缺少片段（job 崩溃或被取消?），回落旧条目")
         existing = find_existing(app_cfg, existing_by_bid, existing_by_name)
         if isinstance(existing, dict):
+            bid = str(existing.get("bundleIdentifier") or "").strip()
+            name = str(existing.get("name") or "").strip()
+            existing_key = ("bid", bid) if bid else ("name", name)
+            # 配置重名会在输出层去重；同一旧条目只需由第一个指向它的配置回退一次
+            if existing_key in covered_existing:
+                continue
+            covered_existing.add(existing_key)
+            if frag is None:
+                missing.append(app_id)
+                log("merge", f"[{app_id}] 缺少片段（job 崩溃或被取消?），回落旧条目")
             final = refresh_static_fields(existing, app_cfg)
             entries.append(final)
             rows.append({"id": app_id, "name": app_cfg.get("name") or app_id, "status": "failed" if frag is not None else "missing", "old_v": existing.get("version") or "", "new_v": existing.get("version") or "", "error": error})
         else:
+            if frag is None:
+                missing.append(app_id)
             log("merge", f"[{app_id}] 无旧条目，本轮源中缺席")
             rows.append({"id": app_id, "name": app_cfg.get("name") or app_id, "status": "absent", "old_v": "", "new_v": "", "error": error})
 
